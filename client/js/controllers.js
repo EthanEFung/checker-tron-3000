@@ -21,7 +21,7 @@ function createBoardController() {
 
 function createSqController(sq) {
   const $sq = document.createElement("td");
-  $sq.setAttribute("class", "square");
+  $sq.setAttribute("class", `square ${sq.color}`);
   $sq.setAttribute("row", sq.row);
   $sq.setAttribute("col", sq.col);
 

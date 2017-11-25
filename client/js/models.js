@@ -78,7 +78,8 @@ class Checker {
   move(currSq, desiredSq, board) {
     if (
       isSqTwoAway("col", currSq, desiredSq) &&
-      isSqTwoAway("row", currSq, desiredSq)
+      isSqTwoAway("row", currSq, desiredSq) &&
+      isSqVacant(desiredSq)
     ) {
       let btwnSq = defineBtwnSq(currSq, desiredSq, board);
       if (!isSqVacant(btwnSq)) {

@@ -3,3 +3,7 @@
   height: 50px;
   border: 1px solid black;
 }
+
+.black {
+  background-color: #444;
+}
